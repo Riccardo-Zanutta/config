@@ -1,0 +1,5 @@
+{
+  // Replace with your own path to cmder.exe
+  "terminal": "C:\\Program Files\\ConEmu\\ConEmu64.exe",
+  "parameters": []
+}

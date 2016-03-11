@@ -1,0 +1,38 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"AutoFileName",
+		"Babel",
+		"Babel Snippets",
+		"ColorSchemeSelector",
+		"Darkula Color Scheme",
+		"Dracula Color Scheme",
+		"Emmet",
+		"FuzzyFilePath",
+		"Git",
+		"GitGutter",
+		"Gutter Color",
+		"Jade",
+		"JavaScript Completions",
+		"jQuery",
+		"JS Snippets",
+		"Material Theme",
+		"Package Control",
+		"Rails Developer Snippets",
+		"ReactJS Snippets",
+		"Sass",
+		"SASS Snippets",
+		"SideBarEnhancements",
+		"Stylus",
+		"Stylus-Snippets",
+		"Terminal",
+		"Theme - Spacegray",
+		"Themr",
+		"WakaTime"
+	]
+}

@@ -1,0 +1,18 @@
+[user]
+	name  = Riccardo-Zanutta
+	email = zanuttar@gmail.com
+[alias]
+	aa       = add -A
+    ap       = add -p
+	st       = status
+    cm       = commit -m
+    pom      = push origin master
+    plom     = pull origin master
+    shortlog = shortlog -sn
+    log5     = log -5 --pretty --oneline
+    log      = log --all --graph --decorate --oneline --simplify-by-decoration
+    lol      = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+    today    = diff --shortstat "@{0 day ago}"
+[credential]
+	helper      = !'C:\\Users\\Riccardo\\AppData\\Roaming\\GitCredStore\\git-credential-AWSSV4.exe'
+	UseHttpPath = true
