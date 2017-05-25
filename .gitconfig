@@ -2,17 +2,27 @@
 	name  = Riccardo-Zanutta
 	email = zanuttar@gmail.com
 [alias]
-	aa       = add -A
-    ap       = add -p
-	st       = status
-    cm       = commit -m
-    pom      = push origin master
-    plom     = pull origin master
-    shortlog = shortlog -sn
-    log5     = log -5 --pretty --oneline
-    log      = log --all --graph --decorate --oneline --simplify-by-decoration
-    lol      = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
-    today    = diff --shortstat "@{0 day ago}"
-[credential]
-	helper      = !'C:\\Users\\Riccardo\\AppData\\Roaming\\GitCredStore\\git-credential-AWSSV4.exe'
-	UseHttpPath = true
+  st = status -s # View the current working tree status using the short format
+  log5 = log -5 --pretty --oneline
+  wow = log --all --graph --decorate --oneline --simplify-by-decoration
+  today = diff --shortstat "@{0 day ago}"
+  cob = checkout -b
+  aa = add -A
+  cm = !git add -A && git commit -m
+  pom = push origin master
+  plom = pull origin master
+  la = "!git config -l | grep alias | cut -c 7-"
+	glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	prune = fetch --prune # deletes any local branch which has been deleted from the remote
+	leaderboard = shortlog -sn
+	overview = log --all --since='2 weeks' --oneline --no-merges
+[core]
+	excludesfile = /Users/riccardo/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/riccardo/.stCommitMsg
